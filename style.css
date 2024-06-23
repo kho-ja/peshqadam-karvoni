@@ -590,7 +590,7 @@ section.contact {
   width: 1em;
   color: currentColor;
 }
-html[data-theme="dark"] .card img {
+html[data-theme="dark"] .contact .card img {
   filter: invert(1);
 }
 
