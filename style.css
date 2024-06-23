@@ -96,6 +96,33 @@ p {
   margin-block: 1rem;
 }
 
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.6rem;
+  }
+  h2 {
+    font-size: 2.369rem;
+  }
+  h3 {
+    font-size: 1.777rem;
+  }
+  h4 {
+    font-size: 1.333rem;
+  }
+  h5 {
+    font-size: 1rem;
+  }
+  h6 {
+    font-size: 0.75rem;
+  }
+  p {
+    max-width: 50ch;
+  }
+  small {
+    font-size: 0.75rem;
+  }
+}
+
 @media (prefers-reduced-motion: no-preference) {
   :has(:target) {
     scroll-behavior: smooth;
@@ -242,11 +269,18 @@ p {
   }
 }
 
+section .container {
+  justify-content: center;
+}
+
 /* Navigation */
 
 nav.nav {
   background-color: #01434f;
   font-family: "Roboto", sans-serif;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 nav.nav a {
   color: #fff;
@@ -290,6 +324,7 @@ header {
   padding-block: 10rem;
   isolation: isolate;
   color: white;
+  word-wrap: break-word;
 }
 header::before {
   content: "";
@@ -306,7 +341,6 @@ header .container {
 }
 header .content h1 {
   text-transform: uppercase;
-  word-wrap: break-word;
 }
 
 /* About */
@@ -323,6 +357,7 @@ section.title {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 0.5rem;
+  justify-content: center;
 }
 .title .card {
   background-color: var(--background-100);
@@ -379,9 +414,16 @@ section.application {
   padding-block: 5rem;
 }
 section.application .container {
-  display: grid;
-  grid-template-columns: 30% 1fr;
+  display: flex;
   gap: 1rem;
+  flex-wrap: wrap;
+}
+section.application .img {
+  width: 30%;
+}
+section.application .content {
+  flex: 1;
+  width: 100%;
 }
 /* Quote */
 .quote {
@@ -475,6 +517,11 @@ section.show {
   object-fit: contain;
   object-position: center center;
 }
+/* Maps */
+#map {
+  width: 100%;
+  height: 400px;
+}
 /* Contact */
 section.contact {
   position: relative;
@@ -491,9 +538,9 @@ section.contact {
 .contact .container > .content {
   display: grid;
   background-color: var(--background-100);
-  padding: 2rem;
-  width: 65%;
-  min-width: 350px;
+  padding: 1rem;
+  width: 100%;
+  max-width: 600px;
   margin: auto;
   text-align: center;
 }

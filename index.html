@@ -280,7 +280,83 @@
         <div class="content">
           <h2>Bizning kutubxonalar</h2>
         </div>
-        <div class="cards"></div>
+        <script
+          src="https://api-maps.yandex.ru/2.1/?apikey=3c3f69d1-ba9f-4204-87e1-c8505355fc62&lang=en_US"
+          type="text/javascript"
+        ></script>
+        <script>
+          ymaps.ready(init);
+
+          function init() {
+            var map = new ymaps.Map("map", {
+              center: [41.3111, 64.269], // O'zbekiston Markazi
+              zoom: 6,
+            });
+
+            var preset = "islands#bookIcon";
+
+            var locations = [
+              {
+                name: "Kutubxona",
+                address:
+                  "Bizning kutubxonamizda o`zingizga kerakli kitobni olib mutolaa qilishinzgi mumkin",
+                coordinates: [41.3111, 69.2797],
+                image: "/css/images/image.png",
+              },
+              {
+                name: "Kutubxona 1",
+                address:
+                  "Bizning kutubxonamizda o`zingizga kerakli kitobni olib mutolaa qilishinzgi mumkin",
+                coordinates: [39.7781, 64.4281],
+                image: "/css/images/image-1.png",
+              },
+              {
+                name: "Kutubxona 2",
+                address:
+                  "Bizning kutubxonamizda o`zingizga kerakli kitobni olib mutolaa qilishinzgi mumkin",
+                coordinates: [39.6548, 66.9597],
+                image: "/css/images/image-14.png",
+              },
+              {
+                name: "Kutubxona 3",
+                address:
+                  "Bizning kutubxonamizda o`zingizga kerakli kitobni olib mutolaa qilishinzgi mumkin",
+                coordinates: [41.3303, 69.2778],
+                image: "/css/images/image-23.png",
+              },
+              {
+                name: "Kutubxona 4",
+                address:
+                  "Bizning kutubxonamizda o`zingizga kerakli kitobni olib mutolaa qilishinzgi mumkin",
+                coordinates: [41.3126, 69.2809],
+                image: "/css/images/kitobulash.png",
+              },
+            ];
+
+            locations.forEach(function (location) {
+              var placemark = new ymaps.Placemark(
+                location.coordinates,
+                {
+                  hintContent: location.name,
+                  balloonContentHeader: location.name,
+                  balloonContentBody:
+                    '<div><img src="' +
+                    location.image +
+                    '" width="100" height="100" /></div>' +
+                    location.address,
+                  balloonContentFooter: "",
+                },
+                {
+                  preset: preset,
+                }
+              );
+
+              map.geoObjects.add(placemark);
+            });
+          }
+        </script>
+
+        <div id="map" style="width: 100%; height: 400px"></div>
       </div>
     </section>
 
