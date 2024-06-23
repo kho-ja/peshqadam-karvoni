@@ -19,6 +19,7 @@
 html {
   color-scheme: dark light; /* Default dark */
   hanging-punctuation: first last; /* Not supported in Chrome */
+  font-size: 18px;
 }
 
 body {
@@ -169,6 +170,12 @@ p {
     --accent-800: #242642;
     --accent-900: #121321;
     --accent-950: #090a10;
+  }
+  .contact .card svg {
+    filter: invert(1);
+  }
+  .contact .card img {
+    filter: unset !important;
   }
 }
 @media (prefers-color-scheme: dark) {
@@ -444,7 +451,9 @@ section.show {
   display: grid;
   place-content: center;
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(var(--background-50), 0.6);
+  border: 0.5px solid var(--text-950);
+  text-shadow: 0 0 1rem var(--text-100);
   backdrop-filter: blur(5px);
   border-radius: 1rem;
 }
@@ -465,4 +474,66 @@ section.show {
   height: 100px;
   object-fit: contain;
   object-position: center center;
+}
+/* Contact */
+section.contact {
+  position: relative;
+  isolation: isolate;
+}
+.contact .img {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+}
+.contact img {
+  object-position: center 65%;
+}
+.contact .container > .content {
+  display: grid;
+  background-color: var(--background-100);
+  padding: 2rem;
+  width: 65%;
+  min-width: 350px;
+  margin: auto;
+  text-align: center;
+}
+.contact form {
+  display: grid;
+  gap: 1rem;
+}
+.contact button {
+  align-self: start;
+}
+.contact input,
+.contact textarea {
+  padding: 0.5rem;
+  border: 1px solid var(--text-900);
+  border-radius: 0.5rem;
+}
+.contact .info {
+  width: 100%;
+  background-color: var(--background-950);
+  z-index: 10;
+  display: flex;
+  flex-wrap: wrap;
+}
+.contact .info .card {
+  flex: 1 1 300px;
+  padding: 1rem;
+  color: var(--accent-100);
+  display: grid;
+  justify-content: center;
+}
+.contact .card h3 {
+  display: flex;
+  gap: 0.5em;
+}
+.contact .card svg {
+  width: 1em;
+  color: currentColor;
+}
+.contact .card img {
+  width: 1em;
+  filter: invert(1);
+  color: currentColor;
 }
