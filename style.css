@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Kaushan+Script&display=swap");
-/* 
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
 *   Kevin Powell
 *   https://youtu.be/cCAtD_BAHNw 
 */
@@ -54,7 +53,7 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: "Kaushan Script", serif;
+  font-family: "Lobster", sans-serif;
   font-weight: 700;
   line-height: 1;
   margin-block: 1rem;
