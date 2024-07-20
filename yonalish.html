@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Peshqadam karvoni</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="container">
+        <div class="logo">
+          <a href="index.html"
+            ><img
+              src="./img/logo.png"
+              alt="media yo‘nalishiPeshqadam Karvoni logo"
+          /></a>
+        </div>
+        <div class="menu closed">
+          <ul>
+            <li><a href="#">Bosh sahifa</a></li>
+            <li><a href="#">Yo‘nalishlar</a></li>
+            <li><a href="#">Yangiliklar</a></li>
+            <li><a href="#">Videolar</a></li>
+            <li><a href="#">Biz bilan bog‘lanish</a></li>
+          </ul>
+        </div>
+        <div class="icons">
+          <div id="mode">
+            <svg
+              class="text dark_icon"
+              width="25"
+              height="25"
+              viewBox="0 0 25 25"
+              fill="white"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M18.51 4.59L15.98 6.53L16.89 9.59L14.26 7.78L11.63 9.59L12.54 6.53L10.01 4.59L13.2 4.5L14.26 1.5L15.32 4.5L18.51 4.59ZM22.01 11.5L20.37 12.75L20.96 14.73L19.26 13.56L17.56 14.73L18.15 12.75L16.51 11.5L18.57 11.45L19.26 9.5L19.95 11.45L22.01 11.5ZM19.73 16.45C20.56 16.37 21.45 17.55 20.92 18.3C20.6 18.75 20.26 19.17 19.84 19.57C15.93 23.5 9.60002 23.5 5.70002 19.57C1.79002 15.67 1.79002 9.33 5.70002 5.43C6.10002 5.03 6.52002 4.67 6.97002 4.35C7.72002 3.82 8.90002 4.71 8.82002 5.54C8.55002 8.4 9.51002 11.37 11.71 13.56C12.7496 14.6052 14.0083 15.4066 15.3952 15.9064C16.7821 16.4062 18.2627 16.5918 19.73 16.45ZM18.09 18.47C15.1543 18.3012 12.381 17.0675 10.29 15C8.12002 12.81 6.96002 10 6.80002 7.18C3.99002 10.32 4.10002 15.14 7.11002 18.16C10.13 21.17 14.95 21.28 18.09 18.47Z"
+              ></path>
+            </svg>
+            <svg
+              class="text light_icon"
+              width="25"
+              height="25"
+              viewBox="0 0 25 25"
+              fill="white"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12.76 9.5C14.41 9.5 15.76 10.85 15.76 12.5C15.76 14.15 14.41 15.5 12.76 15.5C11.11 15.5 9.76001 14.15 9.76001 12.5C9.76001 10.85 11.11 9.5 12.76 9.5ZM12.76 7.5C10 7.5 7.76001 9.74 7.76001 12.5C7.76001 15.26 10 17.5 12.76 17.5C15.52 17.5 17.76 15.26 17.76 12.5C17.76 9.74 15.52 7.5 12.76 7.5ZM2.76001 13.5H4.76001C5.31001 13.5 5.76001 13.05 5.76001 12.5C5.76001 11.95 5.31001 11.5 4.76001 11.5H2.76001C2.21001 11.5 1.76001 11.95 1.76001 12.5C1.76001 13.05 2.21001 13.5 2.76001 13.5ZM20.76 13.5H22.76C23.31 13.5 23.76 13.05 23.76 12.5C23.76 11.95 23.31 11.5 22.76 11.5H20.76C20.21 11.5 19.76 11.95 19.76 12.5C19.76 13.05 20.21 13.5 20.76 13.5ZM11.76 2.5V4.5C11.76 5.05 12.21 5.5 12.76 5.5C13.31 5.5 13.76 5.05 13.76 4.5V2.5C13.76 1.95 13.31 1.5 12.76 1.5C12.21 1.5 11.76 1.95 11.76 2.5ZM11.76 20.5V22.5C11.76 23.05 12.21 23.5 12.76 23.5C13.31 23.5 13.76 23.05 13.76 22.5V20.5C13.76 19.95 13.31 19.5 12.76 19.5C12.21 19.5 11.76 19.95 11.76 20.5ZM6.75001 5.08C6.6575 4.9873 6.54761 4.91375 6.42663 4.86357C6.30566 4.81339 6.17598 4.78756 6.04501 4.78756C5.91404 4.78756 5.78436 4.81339 5.66339 4.86357C5.54241 4.91375 5.43252 4.9873 5.34001 5.08C5.24731 5.17251 5.17376 5.2824 5.12358 5.40338C5.0734 5.52435 5.04757 5.65403 5.04757 5.785C5.04757 5.91597 5.0734 6.04565 5.12358 6.16662C5.17376 6.2876 5.24731 6.39749 5.34001 6.49L6.40001 7.55C6.79001 7.94 7.43001 7.94 7.81001 7.55C8.19001 7.16 8.20001 6.52 7.81001 6.14L6.75001 5.08ZM19.12 17.45C19.0275 17.3573 18.9176 17.2837 18.7966 17.2336C18.6757 17.1834 18.546 17.1576 18.415 17.1576C18.284 17.1576 18.1544 17.1834 18.0334 17.2336C17.9124 17.2837 17.8025 17.3573 17.71 17.45C17.6173 17.5425 17.5438 17.6524 17.4936 17.7734C17.4434 17.8944 17.4176 18.024 17.4176 18.155C17.4176 18.286 17.4434 18.4157 17.4936 18.5366C17.5438 18.6576 17.6173 18.7675 17.71 18.86L18.77 19.92C19.16 20.31 19.8 20.31 20.18 19.92C20.2727 19.8275 20.3463 19.7176 20.3964 19.5966C20.4466 19.4757 20.4725 19.346 20.4725 19.215C20.4725 19.084 20.4466 18.9543 20.3964 18.8334C20.3463 18.7124 20.2727 18.6025 20.18 18.51L19.12 17.45ZM20.18 6.49C20.2727 6.39749 20.3463 6.2876 20.3964 6.16662C20.4466 6.04565 20.4725 5.91597 20.4725 5.785C20.4725 5.65403 20.4466 5.52435 20.3964 5.40338C20.3463 5.2824 20.2727 5.17251 20.18 5.08C20.0875 4.9873 19.9776 4.91375 19.8566 4.86357C19.7357 4.81339 19.606 4.78756 19.475 4.78756C19.344 4.78756 19.2144 4.81339 19.0934 4.86357C18.9724 4.91375 18.8625 4.9873 18.77 5.08L17.71 6.14C17.32 6.53 17.32 7.17 17.71 7.55C18.1 7.93 18.74 7.94 19.12 7.55L20.18 6.49ZM7.81001 18.86C7.90271 18.7675 7.97626 18.6576 8.02644 18.5366C8.07662 18.4157 8.10245 18.286 8.10245 18.155C8.10245 18.024 8.07662 17.8944 8.02644 17.7734C7.97626 17.6524 7.90271 17.5425 7.81001 17.45C7.7175 17.3573 7.60761 17.2837 7.48663 17.2336C7.36566 17.1834 7.23598 17.1576 7.10501 17.1576C6.97404 17.1576 6.84436 17.1834 6.72339 17.2336C6.60241 17.2837 6.49252 17.3573 6.40001 17.45L5.34001 18.51C4.95001 18.9 4.95001 19.54 5.34001 19.92C5.73001 20.3 6.37001 20.31 6.75001 19.92L7.81001 18.86Z"
+              ></path>
+            </svg>
+          </div>
+          <div class="hamburger dn" id="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <header>
+      <div class="container">
+        <div class="content">
+          <h1>Media Yo‘nalishi</h1>
+          <p>
+            Shayx Muhammas Sodiq Muhammad Yusuf rahimahullohning muborak
+            hayotlari va yorqin ilm yoʻllarini barcha bilan ulashish uchun
+          </p>
+          <button href="#" class="btn white">Batafsil</button>
+        </div>
+      </div>
+      <div class="img">
+        <img src="./img/media.png" alt="" />
+      </div>
+    </header>
+
+    <section class="title">
+      <div class="container">
+        <div class="content">
+          <h4>
+            Yo‘nalishga quyidagi yo‘nalishlarning biri yoki barchasi orqali
+            ishtirok etib a'zo bo‘lish mumkin
+          </h4>
+        </div>
+        <div class="cards">
+          <div class="card">
+            <div class="content">
+              <h3>
+                <svg
+                  class="icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 576 512"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M0 128C0 92.7 28.7 64 64 64l256 0c35.3 0 64 28.7 64 64l0 256c0 35.3-28.7 64-64 64L64 448c-35.3 0-64-28.7-64-64L0 128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2l0 256c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1l0-17.1 0-128 0-17.1 14.2-9.5 96-64c9.8-6.5 22.4-7.2 32.9-1.6z"
+                  />
+                </svg>
+              </h3>
+              <p>
+                1. Ijtimoiy tarmoqlarda video, surat yoki matn ko‘rinishida faol
+                va davomiy ravishda kitobxonlikka chaqiruvlar.
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="content">
+              <h3>
+                <svg
+                  class="icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 448 512"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M96 0C43 0 0 43 0 96L0 416c0 53 43 96 96 96l288 0 32 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l0-64c17.7 0 32-14.3 32-32l0-320c0-17.7-14.3-32-32-32L384 0 96 0zm0 384l256 0 0 64L96 448c-17.7 0-32-14.3-32-32s14.3-32 32-32zm32-240c0-8.8 7.2-16 16-16l192 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-192 0c-8.8 0-16-7.2-16-16zm16 48l192 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-192 0c-8.8 0-16-7.2-16-16s7.2-16 16-16z"
+                  />
+                </svg>
+              </h3>
+              <p>
+                2. Kitobxonlik uchrashuvlari, muhokamalar, tanlovlar va shu kabi
+                madaniy tadbirlar tashkil etish.
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="content">
+              <h3>
+                <svg
+                  class="icon"
+                  fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 640 512"
+                >
+                  <path
+                    d="M160 64c0-35.3 28.7-64 64-64L576 0c35.3 0 64 28.7 64 64l0 288c0 35.3-28.7 64-64 64l-239.2 0c-11.8-25.5-29.9-47.5-52.4-64l99.6 0 0-32c0-17.7 14.3-32 32-32l64 0c17.7 0 32 14.3 32 32l0 32 64 0 0-288L224 64l0 49.1C205.2 102.2 183.3 96 160 96l0-32zm0 64a96 96 0 1 1 0 192 96 96 0 1 1 0-192zM133.3 352l53.3 0C260.3 352 320 411.7 320 485.3c0 14.7-11.9 26.7-26.7 26.7L26.7 512C11.9 512 0 500.1 0 485.3C0 411.7 59.7 352 133.3 352z"
+                  />
+                </svg>
+              </h3>
+              <p>
+                3. Hazratning asarlari asosida mutaxassislar tomonidan
+                seminar-treninglar tashkil etish.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="title light">
+      <div class="container">
+        <div class="content">
+          <h4>
+            Bizga ariza qoldirganingizdan keyin quyidagi jarayonlar sodir
+            bo‘ladi:
+          </h4>
+        </div>
+        <div class="cards">
+          <div class="card">
+            <div class="content">
+              <p>
+                1. Arizalar kelgach mas’ul xodim arizachiga aloqaga chiqadi va
+                undan kitobxonlik bo‘yicha shu paytgacha qilgan ishlari va
+                kelajakda shu yo‘nalish doirasidagi maqsadlarini so‘raydi. Agar
+                Karvon doirasida kitobxonlik targ‘ibotiga bo‘lgan niyati jiddiy
+                bo‘lsa, kitobxonlik targ'ibotini yanada faol olib borishi talab
+                etiladi. So‘ngra arizachiga yo‘nalish doirasida yo‘riqnoma
+                yuboriladi va arizachilardan u talablarga javob berishlari
+                so‘raladi.
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="content">
+              <p>
+                2. Arizachilar kitobxonlik targ‘ibotini yo‘lga qo‘yib
+                olganlaridan so‘ng, bizga har hafta kitobxonlik bo‘yicha qilgan
+                ishlaridan hisobotlar bera boshlashadi. Biz esa u hisobotlar
+                orqali arizachilarning faoliyatini bir necha oy sinchiklab
+                o‘rganamiz. Agar arizachining kitobxonlik faoliyati faol bo‘lib,
+                ko‘p sonli insonlarni kitobxonlikka targ‘ib qilayotgan bo‘lsa,
+                uni Karvonimizga a’zo sifatida qabul qilamiz. Shuning uchun
+                arizachilardan o‘z faoliyatlarini tezroq va faolroq yo‘lga
+                qo‘yishlari talab etiladi.
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="content">
+              <p>
+                3. Kitobxonlik faoliyati Karvonga a’zo sifatida qabul qilinishga
+                munosib deb topilsa, arizachini muassasamizga taklif qilib,
+                shartnoma imzolaymiz va arizachining bundan keyingi faoliyatlari
+                ham mustaqil ham Karvon bilan hamkorlikda bo‘ladi.
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="content">
+              <p>
+                4. Bundan tashqari yo‘nalishimizning bo‘lajak a’zolaridan biz
+                tomonimizdan tuzib chiqilgan yo‘riqnoma talablariga ham javob
+                berishlari talab etiladi. Yo‘riqnoma arizachi bilan bog‘langanda
+                yuboriladi.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="title people">
+      <div class="container">
+        <div class="content">
+          <h2>A'zolar</h2>
+        </div>
+        <div class="cards">
+          <div class="card profile">
+            <div class="img">
+              <img src="./img/1713320072-973645.png" alt="Qurbonova Sohiba" />
+            </div>
+            <div class="content">
+              <h3>Qurbonova Sohiba</h3>
+              <p>
+                Hazratning kitoblari asosida o‘quv markazlarida dars berish
+                bilan shug‘ullanadi.
+              </p>
+              <button class="btn primary">Intervyu videosi</button>
+            </div>
+          </div>
+          <div class="card profile">
+            <div class="img">
+              <img src="./img/1713320072-973645.png" alt="Qurbonova Sohiba" />
+            </div>
+            <div class="content">
+              <h3>Qurbonova Sohiba</h3>
+              <p>
+                Hazratning kitoblari asosida o‘quv markazlarida dars berish
+                bilan shug‘ullanadi.
+              </p>
+              <button class="btn primary">Intervyu videosi</button>
+            </div>
+          </div>
+          <div class="card profile">
+            <div class="img">
+              <img src="./img/1713320072-973645.png" alt="Qurbonova Sohiba" />
+            </div>
+            <div class="content">
+              <h3>Qurbonova Sohiba</h3>
+              <p>
+                Hazratning kitoblari asosida o‘quv markazlarida dars berish
+                bilan shug‘ullanadi.
+              </p>
+              <button class="btn primary">Intervyu videosi</button>
+            </div>
+          </div>
+          <div class="card profile">
+            <div class="img">
+              <img src="./img/1713320072-973645.png" alt="Qurbonova Sohiba" />
+            </div>
+            <div class="content">
+              <h3>Qurbonova Sohiba</h3>
+              <p>
+                Hazratning kitoblari asosida o‘quv markazlarida dars berish
+                bilan shug‘ullanadi.
+              </p>
+              <button class="btn primary">Intervyu videosi</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="title news">
+      <div class="container">
+        <div class="content">
+          <h2>Yangiliklar</h2>
+          <p>
+            Peshqadam karvonida sodir bo'layotgan barcha yangiliklardan xabardor
+            bo'ling
+          </p>
+        </div>
+        <div class="cards">
+          <div class="card">
+            <div class="img">
+              <img src="./img/mahorat.png" alt="mahorat darsi" />
+            </div>
+            <div class="content">
+              <h3>Yana bir mahorat darsi bo‘lib o‘tdi</h3>
+              <p>
+                "Mutaxassislar tayyorlash" yo‘nalishi a’zosi Djabbarova Nozima
+                tomonidan Imom Buxoriy nomidagi Toshkent Islom instituti
+                ustozalari va talabalariga “Ta’limda zamonaviy kompyuter
+                texnologiyalaridan foydalanish” mavzusida trening o‘tkazildi.
+              </p>
+              <time datetime="2024-05-03" class="small">2024-05-03</time>
+              <button class="btn">Batafsil</button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="img">
+              <img src="./img/mahorat.png" alt="mahorat darsi" />
+            </div>
+            <div class="content">
+              <h3>Yana bir mahorat darsi bo‘lib o‘tdi</h3>
+              <p>
+                "Mutaxassislar tayyorlash" yo‘nalishi a’zosi Djabbarova Nozima
+                tomonidan Imom Buxoriy nomidagi Toshkent Islom instituti
+                ustozalari va talabalariga “Ta’limda zamonaviy kompyuter
+                texnologiyalaridan foydalanish” mavzusida trening o‘tkazildi.
+              </p>
+              <time datetime="2024-05-03" class="small">2024-05-03</time>
+              <button class="btn">Batafsil</button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="img">
+              <img src="./img/mahorat.png" alt="mahorat darsi" />
+            </div>
+            <div class="content">
+              <h3>Yana bir mahorat darsi bo‘lib o‘tdi</h3>
+              <p>
+                "Mutaxassislar tayyorlash" yo‘nalishi a’zosi Djabbarova Nozima
+                tomonidan Imom Buxoriy nomidagi Toshkent Islom instituti
+                ustozalari va talabalariga “Ta’limda zamonaviy kompyuter
+                texnologiyalaridan foydalanish” mavzusida trening o‘tkazildi.
+              </p>
+              <time datetime="2024-05-03" class="small">2024-05-03</time>
+              <button class="btn">Batafsil</button>
+            </div>
+          </div>
+        </div>
+        <div><button class="btn">Ko‘proq</button></div>
+      </div>
+    </section>
+
+    <section class="title videos">
+      <div class="container">
+        <div class="content">
+          <h2>Videolar</h2>
+        </div>
+        <div class="cards">
+          <div class="card">
+            <div class="img">
+              <img src="./img/1713320072-973645.png" alt="Qurbonova Sohiba" />
+            </div>
+            <div class="content">
+              <p>“Har kuni rivojlanishga muhtojmiz” - Charos Raxmatullayeva</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="img">
+              <img src="./img/1713320072-973645.png" alt="Qurbonova Sohiba" />
+            </div>
+            <div class="content">
+              <p>“Har kuni rivojlanishga muhtojmiz” - Charos Raxmatullayeva</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="img">
+              <img src="./img/1713320072-973645.png" alt="Qurbonova Sohiba" />
+            </div>
+            <div class="content">
+              <p>“Har kuni rivojlanishga muhtojmiz” - Charos Raxmatullayeva</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="img">
+              <img src="./img/1713320072-973645.png" alt="Qurbonova Sohiba" />
+            </div>
+            <div class="content">
+              <p>“Har kuni rivojlanishga muhtojmiz” - Charos Raxmatullayeva</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>

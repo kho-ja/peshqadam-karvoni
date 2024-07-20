@@ -89,6 +89,14 @@ p {
   margin-block: 1rem;
 }
 
+a {
+  color: inherit;
+  text-decoration: none;
+}
+a:hover {
+  cursor: pointer;
+}
+
 @media (max-width: 768px) {
   h1 {
     font-size: 2.6rem;
@@ -257,6 +265,12 @@ section .container {
   justify-content: center;
 }
 
+.icon {
+  width: 2em;
+  height: 2em;
+  margin: auto;
+}
+
 /* Navigation */
 
 nav.nav {
@@ -312,16 +326,14 @@ nav.nav a {
 /* header */
 
 header {
-  background-image: url(./img/bg.png);
-  background-position: center;
-  background-size: cover;
+  background-color: var(--accent-500);
   position: relative;
   padding-block: 10rem;
   isolation: isolate;
   color: white;
   word-wrap: break-word;
 }
-header::before {
+header::after {
   content: "";
   position: absolute;
   inset: 0;
@@ -338,10 +350,24 @@ header .content h1 {
   text-transform: uppercase;
 }
 
+header .img {
+  position: absolute;
+  object-fit: cover;
+  inset: 0;
+  z-index: -1;
+}
+
 /* About */
 section.title {
   background-color: var(--background-300);
   padding: 3rem 0;
+}
+.title.light {
+  background-color: var(--background-500);
+}
+.title .container {
+  gap: 1rem;
+  text-align: center;
 }
 .title .container > .content {
   text-align: center;
@@ -363,10 +389,11 @@ section.title {
   gap: 1rem;
 }
 .title .img {
-  aspect-ratio: 1;
+  aspect-ratio: 1 / 1;
   width: 100%;
   color: #000;
   background-color: #fff;
+  object-fit: cover;
 }
 .img img {
   width: 100%;
@@ -395,6 +422,11 @@ section.title {
 .btn:focus-visible {
   background-color: var(--primary-600);
   color: #fff;
+}
+.btn.primary {
+  background-color: var(--accent-500);
+  border-color: transparent;
+  color: currentColor;
 }
 .btn.white {
   color: #fff;
@@ -586,6 +618,50 @@ section.contact {
 }
 html[data-theme="dark"] .contact .card img {
   filter: invert(1);
+}
+
+/* profile */
+.title.people {
+  background-color: var(--background-50);
+}
+
+.people .img {
+  border-radius: 50%;
+  overflow: hidden;
+  margin-top: 1em;
+}
+
+.card.profile {
+  background-color: var(--accent-100);
+  display: flex;
+  align-items: start;
+}
+
+/* Videos */
+.videos {
+  background-color: var(--background-100) !important;
+}
+.videos .card {
+  aspect-ratio: 16/9;
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+  display: grid;
+  place-items: center;
+  color: var(--text-500);
+}
+.videos .img::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: #00000076;
+  z-index: 1;
+}
+.videos .img {
+  aspect-ratio: 16/9;
+  position: absolute;
+  inset: 0;
+  z-index: -1;
 }
 
 @media (max-width: 768px) {
