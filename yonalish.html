@@ -212,172 +212,238 @@
       </div>
     </section>
 
-    <section class="title people">
+    <section class="title">
       <div class="container">
         <div class="content">
-          <h2>A'zolar</h2>
+          <h2>"Media" yo‘nalishi</h2>
         </div>
-        <div class="cards">
-          <div class="card profile">
-            <div class="img">
-              <img src="./img/1713320072-973645.png" alt="Qurbonova Sohiba" />
-            </div>
-            <div class="content">
-              <h3>Qurbonova Sohiba</h3>
-              <p>
-                Hazratning kitoblari asosida o‘quv markazlarida dars berish
-                bilan shug‘ullanadi.
-              </p>
-              <button class="btn primary">Intervyu videosi</button>
-            </div>
-          </div>
-          <div class="card profile">
-            <div class="img">
-              <img src="./img/1713320072-973645.png" alt="Qurbonova Sohiba" />
-            </div>
-            <div class="content">
-              <h3>Qurbonova Sohiba</h3>
-              <p>
-                Hazratning kitoblari asosida o‘quv markazlarida dars berish
-                bilan shug‘ullanadi.
-              </p>
-              <button class="btn primary">Intervyu videosi</button>
-            </div>
-          </div>
-          <div class="card profile">
-            <div class="img">
-              <img src="./img/1713320072-973645.png" alt="Qurbonova Sohiba" />
-            </div>
-            <div class="content">
-              <h3>Qurbonova Sohiba</h3>
-              <p>
-                Hazratning kitoblari asosida o‘quv markazlarida dars berish
-                bilan shug‘ullanadi.
-              </p>
-              <button class="btn primary">Intervyu videosi</button>
-            </div>
-          </div>
-          <div class="card profile">
-            <div class="img">
-              <img src="./img/1713320072-973645.png" alt="Qurbonova Sohiba" />
-            </div>
-            <div class="content">
-              <h3>Qurbonova Sohiba</h3>
-              <p>
-                Hazratning kitoblari asosida o‘quv markazlarida dars berish
-                bilan shug‘ullanadi.
-              </p>
-              <button class="btn primary">Intervyu videosi</button>
-            </div>
-          </div>
+        <div class="tabs">
+          <button class="tab active" onclick="showSection('azolar', event)">
+            A'zolar
+          </button>
+          <button class="tab" onclick="showSection('yangiliklar', event)">
+            Yangiliklar
+          </button>
+          <button class="tab" onclick="showSection('videolar', event)">
+            Videolar
+          </button>
+          <button class="tab" onclick="showSection('statistika', event)">
+            Statistika
+          </button>
         </div>
-      </div>
-    </section>
 
-    <section class="title news">
-      <div class="container">
-        <div class="content">
-          <h2>Yangiliklar</h2>
-          <p>
-            Peshqadam karvonida sodir bo'layotgan barcha yangiliklardan xabardor
-            bo'ling
-          </p>
-        </div>
-        <div class="cards">
-          <div class="card">
-            <div class="img">
-              <img src="./img/mahorat.png" alt="mahorat darsi" />
+        <div id="contents">
+          <section class="title" id="azolar">
+            <div class="cards">
+              <div class="card profile">
+                <div class="img">
+                  <img
+                    src="./img/1713320072-973645.png"
+                    alt="Qurbonova Sohiba"
+                  />
+                </div>
+                <div class="content">
+                  <h3>Qurbonova Sohiba</h3>
+                  <p>
+                    Hazratning kitoblari asosida o‘quv markazlarida dars berish
+                    bilan shug‘ullanadi.
+                  </p>
+                  <button class="btn primary">Intervyu videosi</button>
+                </div>
+              </div>
+              <div class="card profile">
+                <div class="img">
+                  <img
+                    src="./img/1713320072-973645.png"
+                    alt="Qurbonova Sohiba"
+                  />
+                </div>
+                <div class="content">
+                  <h3>Qurbonova Sohiba</h3>
+                  <p>
+                    Hazratning kitoblari asosida o‘quv markazlarida dars berish
+                    bilan shug‘ullanadi.
+                  </p>
+                  <button class="btn primary">Intervyu videosi</button>
+                </div>
+              </div>
+              <div class="card profile">
+                <div class="img">
+                  <img
+                    src="./img/1713320072-973645.png"
+                    alt="Qurbonova Sohiba"
+                  />
+                </div>
+                <div class="content">
+                  <h3>Qurbonova Sohiba</h3>
+                  <p>
+                    Hazratning kitoblari asosida o‘quv markazlarida dars berish
+                    bilan shug‘ullanadi.
+                  </p>
+                  <button class="btn primary">Intervyu videosi</button>
+                </div>
+              </div>
+              <div class="card profile">
+                <div class="img">
+                  <img
+                    src="./img/1713320072-973645.png"
+                    alt="Qurbonova Sohiba"
+                  />
+                </div>
+                <div class="content">
+                  <h3>Qurbonova Sohiba</h3>
+                  <p>
+                    Hazratning kitoblari asosida o‘quv markazlarida dars berish
+                    bilan shug‘ullanadi.
+                  </p>
+                  <button class="btn primary">Intervyu videosi</button>
+                </div>
+              </div>
             </div>
-            <div class="content">
-              <h3>Yana bir mahorat darsi bo‘lib o‘tdi</h3>
-              <p>
-                "Mutaxassislar tayyorlash" yo‘nalishi a’zosi Djabbarova Nozima
-                tomonidan Imom Buxoriy nomidagi Toshkent Islom instituti
-                ustozalari va talabalariga “Ta’limda zamonaviy kompyuter
-                texnologiyalaridan foydalanish” mavzusida trening o‘tkazildi.
-              </p>
-              <time datetime="2024-05-03" class="small">2024-05-03</time>
-              <button class="btn">Batafsil</button>
-            </div>
-          </div>
-          <div class="card">
-            <div class="img">
-              <img src="./img/mahorat.png" alt="mahorat darsi" />
-            </div>
-            <div class="content">
-              <h3>Yana bir mahorat darsi bo‘lib o‘tdi</h3>
-              <p>
-                "Mutaxassislar tayyorlash" yo‘nalishi a’zosi Djabbarova Nozima
-                tomonidan Imom Buxoriy nomidagi Toshkent Islom instituti
-                ustozalari va talabalariga “Ta’limda zamonaviy kompyuter
-                texnologiyalaridan foydalanish” mavzusida trening o‘tkazildi.
-              </p>
-              <time datetime="2024-05-03" class="small">2024-05-03</time>
-              <button class="btn">Batafsil</button>
-            </div>
-          </div>
-          <div class="card">
-            <div class="img">
-              <img src="./img/mahorat.png" alt="mahorat darsi" />
-            </div>
-            <div class="content">
-              <h3>Yana bir mahorat darsi bo‘lib o‘tdi</h3>
-              <p>
-                "Mutaxassislar tayyorlash" yo‘nalishi a’zosi Djabbarova Nozima
-                tomonidan Imom Buxoriy nomidagi Toshkent Islom instituti
-                ustozalari va talabalariga “Ta’limda zamonaviy kompyuter
-                texnologiyalaridan foydalanish” mavzusida trening o‘tkazildi.
-              </p>
-              <time datetime="2024-05-03" class="small">2024-05-03</time>
-              <button class="btn">Batafsil</button>
-            </div>
-          </div>
-        </div>
-        <div><button class="btn">Ko‘proq</button></div>
-      </div>
-    </section>
+          </section>
 
-    <section class="title videos">
-      <div class="container">
-        <div class="content">
-          <h2>Videolar</h2>
-        </div>
-        <div class="cards">
-          <div class="card">
-            <div class="img">
-              <img src="./img/1713320072-973645.png" alt="Qurbonova Sohiba" />
+          <section class="title news" id="yangiliklar">
+            <div class="cards">
+              <div class="card">
+                <div class="img">
+                  <img src="./img/mahorat.png" alt="mahorat darsi" />
+                </div>
+                <div class="content">
+                  <h3>Yana bir mahorat darsi bo‘lib o‘tdi</h3>
+                  <p>
+                    "Mutaxassislar tayyorlash" yo‘nalishi a’zosi Djabbarova
+                    Nozima tomonidan Imom Buxoriy nomidagi Toshkent Islom
+                    instituti ustozalari va talabalariga “Ta’limda zamonaviy
+                    kompyuter texnologiyalaridan foydalanish” mavzusida trening
+                    o‘tkazildi.
+                  </p>
+                  <time datetime="2024-05-03" class="small">2024-05-03</time>
+                  <button class="btn">Batafsil</button>
+                </div>
+              </div>
+              <div class="card">
+                <div class="img">
+                  <img src="./img/mahorat.png" alt="mahorat darsi" />
+                </div>
+                <div class="content">
+                  <h3>Yana bir mahorat darsi bo‘lib o‘tdi</h3>
+                  <p>
+                    "Mutaxassislar tayyorlash" yo‘nalishi a’zosi Djabbarova
+                    Nozima tomonidan Imom Buxoriy nomidagi Toshkent Islom
+                    instituti ustozalari va talabalariga “Ta’limda zamonaviy
+                    kompyuter texnologiyalaridan foydalanish” mavzusida trening
+                    o‘tkazildi.
+                  </p>
+                  <time datetime="2024-05-03" class="small">2024-05-03</time>
+                  <button class="btn">Batafsil</button>
+                </div>
+              </div>
+              <div class="card">
+                <div class="img">
+                  <img src="./img/mahorat.png" alt="mahorat darsi" />
+                </div>
+                <div class="content">
+                  <h3>Yana bir mahorat darsi bo‘lib o‘tdi</h3>
+                  <p>
+                    "Mutaxassislar tayyorlash" yo‘nalishi a’zosi Djabbarova
+                    Nozima tomonidan Imom Buxoriy nomidagi Toshkent Islom
+                    instituti ustozalari va talabalariga “Ta’limda zamonaviy
+                    kompyuter texnologiyalaridan foydalanish” mavzusida trening
+                    o‘tkazildi.
+                  </p>
+                  <time datetime="2024-05-03" class="small">2024-05-03</time>
+                  <button class="btn">Batafsil</button>
+                </div>
+              </div>
             </div>
-            <div class="content">
-              <p>“Har kuni rivojlanishga muhtojmiz” - Charos Raxmatullayeva</p>
+            <div><button class="btn">Ko‘proq</button></div>
+          </section>
+
+          <section class="title videos" id="videolar">
+            <div class="cards">
+              <div class="card">
+                <div class="img">
+                  <img
+                    src="./img/1713320072-973645.png"
+                    alt="Qurbonova Sohiba"
+                  />
+                </div>
+                <div class="content">
+                  <p>
+                    “Har kuni rivojlanishga muhtojmiz” - Charos Raxmatullayeva
+                  </p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="img">
+                  <img
+                    src="./img/1713320072-973645.png"
+                    alt="Qurbonova Sohiba"
+                  />
+                </div>
+                <div class="content">
+                  <p>
+                    “Har kuni rivojlanishga muhtojmiz” - Charos Raxmatullayeva
+                  </p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="img">
+                  <img
+                    src="./img/1713320072-973645.png"
+                    alt="Qurbonova Sohiba"
+                  />
+                </div>
+                <div class="content">
+                  <p>
+                    “Har kuni rivojlanishga muhtojmiz” - Charos Raxmatullayeva
+                  </p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="img">
+                  <img
+                    src="./img/1713320072-973645.png"
+                    alt="Qurbonova Sohiba"
+                  />
+                </div>
+                <div class="content">
+                  <p>
+                    “Har kuni rivojlanishga muhtojmiz” - Charos Raxmatullayeva
+                  </p>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="card">
-            <div class="img">
-              <img src="./img/1713320072-973645.png" alt="Qurbonova Sohiba" />
-            </div>
-            <div class="content">
-              <p>“Har kuni rivojlanishga muhtojmiz” - Charos Raxmatullayeva</p>
-            </div>
-          </div>
-          <div class="card">
-            <div class="img">
-              <img src="./img/1713320072-973645.png" alt="Qurbonova Sohiba" />
-            </div>
-            <div class="content">
-              <p>“Har kuni rivojlanishga muhtojmiz” - Charos Raxmatullayeva</p>
-            </div>
-          </div>
-          <div class="card">
-            <div class="img">
-              <img src="./img/1713320072-973645.png" alt="Qurbonova Sohiba" />
-            </div>
-            <div class="content">
-              <p>“Har kuni rivojlanishga muhtojmiz” - Charos Raxmatullayeva</p>
-            </div>
-          </div>
+            <!-- Add your content here -->
+          </section>
         </div>
       </div>
     </section>
+    <script>
+      function showSection(sectionId, event) {
+        // Remove the active class from all tabs
+        const tabs = document.querySelectorAll(".tab");
+        tabs.forEach((tab) => {
+          tab.classList.remove("active");
+        });
+        // Add the active class to the clicked tab
+        const clickedTab = event.target;
+        clickedTab.classList.add("active");
+
+        // Hide all sections
+        const sections = document.querySelectorAll("#contents > section");
+        sections.forEach((section) => {
+          section.style.display = "none";
+        });
+
+        // Show the selected section
+        const selectedSection = document.getElementById(sectionId);
+        selectedSection.style.display = "block";
+      }
+
+      // Show the first section by default
+      showSection("azolar", { target: document.querySelector(".tab") });
+    </script>
 
     <script src="script.js"></script>
   </body>
