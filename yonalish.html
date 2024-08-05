@@ -69,7 +69,9 @@
             Shayx Muhammas Sodiq Muhammad Yusuf rahimahullohning muborak
             hayotlari va yorqin ilm yoʻllarini barcha bilan ulashish uchun
           </p>
-          <button href="#" class="btn white">Batafsil</button>
+          <button href="#" class="btn white" onclick="scrollToContent()">
+            Batafsil
+          </button>
         </div>
       </div>
       <div class="img">
@@ -233,7 +235,7 @@
         </div>
 
         <div id="contents">
-          <section class="title" id="azolar">
+          <section class="title people" id="azolar">
             <div class="cards">
               <div class="card profile">
                 <div class="img">
@@ -419,31 +421,6 @@
         </div>
       </div>
     </section>
-    <script>
-      function showSection(sectionId, event) {
-        // Remove the active class from all tabs
-        const tabs = document.querySelectorAll(".tab");
-        tabs.forEach((tab) => {
-          tab.classList.remove("active");
-        });
-        // Add the active class to the clicked tab
-        const clickedTab = event.target;
-        clickedTab.classList.add("active");
-
-        // Hide all sections
-        const sections = document.querySelectorAll("#contents > section");
-        sections.forEach((section) => {
-          section.style.display = "none";
-        });
-
-        // Show the selected section
-        const selectedSection = document.getElementById(sectionId);
-        selectedSection.style.display = "block";
-      }
-
-      // Show the first section by default
-      showSection("azolar", { target: document.querySelector(".tab") });
-    </script>
 
     <script src="script.js"></script>
   </body>

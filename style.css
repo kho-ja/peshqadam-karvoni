@@ -623,13 +623,15 @@ html[data-theme="dark"] .contact .card img {
 .title.people {
   background-color: var(--background-50);
 }
-
+.people .card {
+  width: 340px;
+}
 .people .img {
   border-radius: 50%;
   overflow: hidden;
   margin-top: 1em;
+  width: 150px;
 }
-
 .card.profile {
   background-color: var(--accent-100);
   display: flex;
@@ -685,7 +687,11 @@ html[data-theme="dark"] .contact .card img {
 #contents > section {
   background: transparent !important;
 }
-
+.news {
+  display: grid;
+  place-items: center;
+  gap: 1rem;
+}
 @media (max-width: 768px) {
   .dn {
     display: grid !important;
