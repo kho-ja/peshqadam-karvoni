@@ -63,3 +63,33 @@ function scrollToContent() {
     behavior: "smooth",
   });
 }
+
+function animatedNumbers(duration) {
+  const numberElements = document.querySelectorAll("#animatednumber");
+  numberElements.forEach((numberElement) => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          const targetNumber = parseInt(numberElement.textContent);
+          const startNumber = 0;
+          const increment = Math.ceil(targetNumber / (duration / 10));
+
+          let currentNumber = startNumber;
+
+          const interval = setInterval(() => {
+            currentNumber += increment;
+            if (currentNumber >= targetNumber) {
+              clearInterval(interval);
+              currentNumber = targetNumber;
+            }
+            numberElement.textContent = currentNumber;
+          }, duration / targetNumber);
+        }
+      });
+    });
+
+    observer.observe(numberElement);
+  });
+}
+
+animatedNumbers(1000);

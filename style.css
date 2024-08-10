@@ -368,6 +368,11 @@ section.title {
 .title .container {
   gap: 1rem;
 }
+.title .content {
+  text-align: center;
+  display: grid;
+  place-items: center;
+}
 .title .container > .content {
   text-align: center;
   display: grid;
@@ -651,6 +656,23 @@ html[data-theme="dark"] .contact .card img {
   place-items: center;
   color: var(--text-500);
 }
+.videos .card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(255, 255, 255, 0.5);
+  z-index: 1;
+  background-image: url(./img/play-solid.svg);
+  filter: invert(1);
+  background-size: 30% 30%;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0;
+  transition: all 0.5s;
+}
+.videos .card:hover::before {
+  opacity: 1;
+}
 .videos .img::after {
   content: "";
   position: absolute;
@@ -691,6 +713,9 @@ html[data-theme="dark"] .contact .card img {
   display: grid;
   place-items: center;
   gap: 1rem;
+}
+#statistika .card {
+  max-width: 225px;
 }
 @media (max-width: 768px) {
   .dn {
