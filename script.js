@@ -34,27 +34,23 @@ dark_icon.onclick = () => {
 };
 
 function showSection(sectionId, event) {
-  // Remove the active class from all tabs
   const tabs = document.querySelectorAll(".tab");
   tabs.forEach((tab) => {
     tab.classList.remove("active");
   });
-  // Add the active class to the clicked tab
+
   const clickedTab = event.target;
   clickedTab.classList.add("active");
 
-  // Hide all sections
   const sections = document.querySelectorAll("#contents > section");
   sections.forEach((section) => {
     section.style.display = "none";
   });
 
-  // Show the selected section
   const selectedSection = document.getElementById(sectionId);
   selectedSection.style.display = "";
 }
 
-// Show the first section by default
 showSection("azolar", { target: document.querySelector(".tab") });
 
 function scrollToContent() {

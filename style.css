@@ -716,6 +716,20 @@ html[data-theme="dark"] .contact .card img {
 #statistika .card {
   max-width: 225px;
 }
+.new .container {
+  width: 75ch;
+}
+.new img {
+  width: 100%;
+}
+footer {
+  background-color: var(--background-100);
+}
+footer .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 @media (max-width: 768px) {
   .dn {
     display: grid !important;
