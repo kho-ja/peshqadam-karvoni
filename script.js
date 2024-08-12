@@ -67,10 +67,10 @@ function scrollToContent() {
 function animatedNumbers(duration) {
   const numberElements = document.querySelectorAll("#animatednumber");
   numberElements.forEach((numberElement) => {
+    const targetNumber = parseInt(numberElement.textContent);
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          const targetNumber = parseInt(numberElement.textContent);
           const startNumber = 0;
           const increment = Math.ceil(targetNumber / (duration / 10));
 

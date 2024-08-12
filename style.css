@@ -271,6 +271,13 @@ section .container {
   margin: auto;
 }
 
+.buttom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
 /* Navigation */
 
 nav.nav {
@@ -368,11 +375,6 @@ section.title {
 .title .container {
   gap: 1rem;
 }
-.title .content {
-  text-align: center;
-  display: grid;
-  place-items: center;
-}
 .title .container > .content {
   text-align: center;
   display: grid;
@@ -437,9 +439,6 @@ section.title {
   border-color: #fff;
   padding: 1rem 2rem;
   border-radius: 1rem;
-}
-.cards .btn {
-  margin-top: 1rem;
 }
 /* Appliaction */
 section.application {
