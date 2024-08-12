@@ -76,6 +76,10 @@ h5 {
 h6 {
   font-size: 1.05rem;
 }
+time {
+  font-style: italic;
+  font-weight: 900;
+}
 
 small {
   font-size: 0.75rem;
@@ -644,7 +648,7 @@ html[data-theme="dark"] .contact .card img {
 
 /* Videos */
 .videos {
-  background-color: var(--background-100) !important;
+  background-color: var(--background-500) !important;
 }
 .videos .card {
   aspect-ratio: 16/9;
@@ -685,6 +689,12 @@ html[data-theme="dark"] .contact .card img {
   inset: 0;
   z-index: -1;
 }
+.video iframe {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16/9;
+  margin-top: 10px;
+}
 
 /* Tabs */
 .tabs {
@@ -712,6 +722,14 @@ html[data-theme="dark"] .contact .card img {
   display: grid;
   place-items: center;
   gap: 1rem;
+}
+.statistics {
+  display: grid;
+  align-items: center;
+  text-align: center;
+}
+.statistics > .content {
+  margin: auto;
 }
 #statistika .card {
   max-width: 225px;
