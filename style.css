@@ -560,6 +560,7 @@ section.show {
 /* Contact */
 section.contact {
   position: relative;
+  padding: 4rem;
   isolation: isolate;
 }
 .contact .img {
@@ -594,34 +595,6 @@ section.contact {
   padding: 0.5rem;
   border: 1px solid var(--text-900);
   border-radius: 0.5rem;
-}
-.contact .info {
-  width: 100%;
-  background-color: var(--background-950);
-  z-index: 10;
-  display: flex;
-  flex-wrap: wrap;
-}
-.contact .info .card {
-  flex: 1 1 300px;
-  padding: 1rem;
-  color: var(--accent-100);
-  display: grid;
-  justify-content: center;
-  justify-items: center;
-  text-align: center;
-}
-.contact .card h3 {
-  display: flex;
-  gap: 0.5em;
-}
-.contact .card svg {
-  width: 1em;
-  color: currentColor;
-}
-.contact .card img {
-  width: 1em;
-  color: currentColor;
 }
 html[data-theme="dark"] .contact .card img {
   filter: invert(1);
@@ -744,9 +717,28 @@ footer {
   background-color: var(--background-100);
 }
 footer .container {
+  display: grid;
+}
+footer .container > .content {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
+}
+footer .info {
+  display: flex;
+  justify-content: space-between;
+}
+footer .card h3 {
+  display: flex;
+  gap: 0.5em;
+}
+footer .card svg {
+  width: 1em;
+  color: currentColor;
+}
+footer .card img {
+  width: 1em;
+  color: currentColor;
 }
 @media (max-width: 768px) {
   .dn {
