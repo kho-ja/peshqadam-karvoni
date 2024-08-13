@@ -560,7 +560,7 @@ section.show {
 /* Contact */
 section.contact {
   position: relative;
-  padding: 4rem;
+  padding-block: 4rem;
   isolation: isolate;
 }
 .contact .img {
@@ -605,7 +605,8 @@ html[data-theme="dark"] .contact .card img {
   background-color: var(--background-50);
 }
 .people .card {
-  width: 340px;
+  max-width: 340px;
+  flex-wrap: wrap;
 }
 .people .img {
   border-radius: 50%;
@@ -668,7 +669,6 @@ html[data-theme="dark"] .contact .card img {
   aspect-ratio: 16/9;
   margin-top: 10px;
 }
-
 /* Tabs */
 .tabs {
   display: flex;
@@ -708,7 +708,7 @@ html[data-theme="dark"] .contact .card img {
   max-width: 225px;
 }
 .new .container {
-  width: 75ch;
+  max-width: 75ch;
 }
 .new img {
   width: 100%;
@@ -723,6 +723,10 @@ footer .container > .content {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+footer .container > .content p {
+  text-align: right;
+  line-height: 1;
 }
 footer .info {
   display: flex;

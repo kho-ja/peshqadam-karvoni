@@ -7,7 +7,10 @@ hamburger.onclick = () => {
 let light_icon = document.querySelector(".light_icon");
 let dark_icon = document.querySelector(".dark_icon");
 
-if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+// Check if there is a saved theme preference in local storage
+const savedTheme = localStorage.getItem("theme");
+
+if (savedTheme === "dark") {
   light_icon.style.display = "none";
   dark_icon.style.display = "block";
   document.documentElement.style.colorScheme = "dark";
@@ -24,6 +27,9 @@ light_icon.onclick = () => {
   document.documentElement.dataset.theme = "dark";
   light_icon.style.display = "none";
   dark_icon.style.display = "block";
+
+  // Save the theme preference to local storage
+  localStorage.setItem("theme", "dark");
 };
 
 dark_icon.onclick = () => {
@@ -31,6 +37,9 @@ dark_icon.onclick = () => {
   document.documentElement.dataset.theme = "light";
   dark_icon.style.display = "none";
   light_icon.style.display = "block";
+
+  // Save the theme preference to local storage
+  localStorage.setItem("theme", "light");
 };
 
 function showSection(sectionId, event) {
