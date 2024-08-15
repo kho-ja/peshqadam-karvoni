@@ -395,7 +395,6 @@ section.title {
   padding: 1rem;
   border-radius: 0.5rem;
   flex-basis: 340px;
-  display: grid;
   gap: 1rem;
 }
 .title .img {
@@ -612,12 +611,11 @@ html[data-theme="dark"] .contact .card img {
   border-radius: 50%;
   overflow: hidden;
   margin-top: 1em;
-  width: 150px;
 }
 .card.profile {
   background-color: var(--accent-100);
-  display: flex;
-  align-items: start;
+  display: grid;
+  grid-template-columns: auto 1fr;
 }
 
 /* Videos */
@@ -631,7 +629,7 @@ html[data-theme="dark"] .contact .card img {
   isolation: isolate;
   display: grid;
   place-items: center;
-  color: var(--text-500);
+  color: #8ae8e8;
 }
 .videos .card::before {
   content: "";
@@ -765,5 +763,9 @@ footer .card img {
   .nav .menu.closed {
     opacity: 0;
     visibility: hidden;
+  }
+  .card.profile {
+    grid-template-columns: 1fr;
+    max-width: 100%;
   }
 }
