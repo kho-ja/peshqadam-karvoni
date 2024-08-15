@@ -616,7 +616,7 @@ html[data-theme="dark"] .contact .card img {
 .card.profile {
   background-color: var(--accent-100);
   display: grid;
-  grid-template-columns: auto 1fr;
+  grid-template-columns: 70px 1fr;
 }
 
 /* Videos */
