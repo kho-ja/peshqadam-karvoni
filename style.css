@@ -46,7 +46,6 @@ h6 {
   font-weight: 700;
   line-height: 1.15;
   margin-block: 1rem;
-  word-break: break-word;
 }
 
 body {
@@ -385,6 +384,9 @@ section.title {
   display: grid;
   place-items: center;
 }
+.content :where(h1, h2, h3, h4, h5, h6) {
+  word-break: break-word;
+}
 .title .cards {
   display: flex;
   flex-wrap: wrap;
@@ -415,6 +417,7 @@ section.title {
   font-weight: 900;
   text-transform: uppercase;
   display: block;
+  word-break: break-word;
 }
 .btn {
   background-color: transparent;
@@ -449,16 +452,13 @@ section.application {
   padding-block: 5rem;
 }
 section.application .container {
-  display: flex;
+  display: grid;
   gap: 1rem;
-  flex-wrap: wrap;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 section.application .img {
-  width: 30%;
 }
 section.application .content {
-  flex: 1;
-  width: 100%;
 }
 /* Quote */
 .quote {
@@ -735,6 +735,7 @@ footer .info {
 footer .card h3 {
   display: flex;
   gap: 0.5em;
+  text-transform: capitalize;
 }
 footer .card svg {
   width: 1em;
@@ -742,6 +743,16 @@ footer .card svg {
 }
 footer .card img {
   width: 1em;
+  color: currentColor;
+}
+.socials {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+}
+.socials svg {
+  width: 2em !important;
   color: currentColor;
 }
 @media (max-width: 768px) {
