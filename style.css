@@ -456,10 +456,6 @@ section.application .container {
   gap: 1rem;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
-section.application .img {
-}
-section.application .content {
-}
 /* Quote */
 .quote {
   background-color: var(--background-200);
@@ -754,6 +750,54 @@ footer .card img {
 .socials svg {
   width: 2em !important;
   color: currentColor;
+}
+.questions {
+  background-color: var(--background-200) !important;
+}
+.questions .content {
+  display: grid;
+  gap: 1em;
+}
+.faq {
+  text-align: left;
+  background-color: var(--background-50);
+  border-radius: 1rem;
+  padding: 1em;
+  display: grid;
+  width: 100%;
+  gap: 0em;
+  transition: all 300ms ease-in-out !important;
+}
+.faq.open {
+  gap: 1em;
+}
+.faq.open .answer {
+  grid-template-rows: 1fr;
+}
+.faq .question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.faq .answer {
+  transition: all 300ms ease-in-out !important;
+  display: grid;
+  grid-template-rows: 0fr;
+}
+.faq .answer > * {
+  overflow: hidden;
+}
+.faq svg {
+  min-width: 2rem;
+  transform: rotate(-90deg);
+  transition: all 300ms;
+}
+.faq.open svg {
+  transform: rotate(0deg);
+}
+.faq :where(h1, h2, h3, h4, h5, h6, p) {
+  max-width: 100%;
+  margin: 0;
 }
 @media (max-width: 768px) {
   .dn {

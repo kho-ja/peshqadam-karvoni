@@ -42,26 +42,6 @@ dark_icon.onclick = () => {
   localStorage.setItem("theme", "light");
 };
 
-function showSection(sectionId, event) {
-  const tabs = document.querySelectorAll(".tab");
-  tabs.forEach((tab) => {
-    tab.classList.remove("active");
-  });
-
-  const clickedTab = event.target;
-  clickedTab.classList.add("active");
-
-  const sections = document.querySelectorAll("#contents > section");
-  sections.forEach((section) => {
-    section.style.display = "none";
-  });
-
-  const selectedSection = document.getElementById(sectionId);
-  selectedSection.style.display = "";
-}
-
-showSection("azolar", { target: document.querySelector(".tab") });
-
 function scrollToContent() {
   window.scrollTo({
     top: window.innerHeight,
@@ -98,3 +78,32 @@ function animatedNumbers(duration) {
 }
 
 animatedNumbers(1000);
+
+const faqs = document.querySelectorAll(".faq");
+faqs.forEach((faq) => {
+  faq.onclick = () => {
+    faq.classList.toggle("open");
+  };
+});
+
+function showSection(sectionId, event) {
+  const tabs = document.querySelectorAll(".tab");
+  if (tabs) {
+    tabs.forEach((tab) => {
+      tab.classList.remove("active");
+    });
+
+    const clickedTab = event.target;
+    clickedTab.classList.add("active");
+
+    const sections = document.querySelectorAll("#contents > section");
+    sections.forEach((section) => {
+      section.style.display = "none";
+    });
+
+    const selectedSection = document.getElementById(sectionId);
+    selectedSection.style.display = "";
+  }
+}
+
+showSection("azolar", { target: document.querySelector(".tab") });
